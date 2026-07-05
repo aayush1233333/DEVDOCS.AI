@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 
 // The URL of our FastAPI backend
-const API_URL = "http://localhost:8000";
+const API_URL = "https://devdocs-ai-sizy.onrender.com";
 
 // TypeScript types — these define the shape of our data
 interface Message {
