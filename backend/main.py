@@ -30,7 +30,7 @@ app = FastAPI(title="DevDocs AI", version="1.0.0")
 # to talk to this backend. Without this, browsers block cross-origin requests.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # React runs on port 3000
+    allow_origins=["*"],  # Allow all origins — production and local
     allow_methods=["*"],
     allow_headers=["*"],
 )
